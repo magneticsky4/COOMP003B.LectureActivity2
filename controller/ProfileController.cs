@@ -1,6 +1,19 @@
-namespace COMP003B.LectureActivity2.Middleware;
+using Microsoft.AspNetCore.Mvc;
 
-public class ProfileController
+namespace COMP003B.LecturreActivity2.Controllers
 {
-    
+    public class ProfileController : Controller
+    {
+        [HttpGet]
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Hobbies()
+        {
+            return View();
+        }
+    }
 }
